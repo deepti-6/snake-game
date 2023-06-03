@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  background: url("../img/bg1.jpg");
+  overflow: hidden;
+  object-fit: cover;
+  min-height: 100vh;
+  min-width: 100vw;
+  /* background-color: orange; */
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#scoreBox {
+  position: absolute;
+  top: 24px;
+  right: 170px;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "Press Start 2P", cursive;
+}
+
+#hiscoreBox {
+  position: absolute;
+  top: 70px;
+  right: 56px;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "Press Start 2P", cursive;
+}
+
+#board {
+    /* background: linear-gradient(rgb(170, 236, 170), rgb(236, 236, 167)); */
+    background: linear-gradient(to bottom, rgba(0, 153, 0, 0.5), rgba(0, 204, 0, 0.5), rgba(51, 255, 51, 0.5));
+  border: 6px solid #405E31;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #405E31;
+  width: 90vmin;
+  height: 92vmin;
+  /* border: 2px solid black; */
+  display: grid;
+  grid-template-rows: repeat(18, 1fr);
+  grid-template-columns: repeat(18, 1fr);
+}
+
+/* .head {
+   background: linear-gradient(#F44336, #D32F2F);
+
+  border: 2px solid rgb(43, 5, 43);
+  transform: scale(1.02);
+  border-radius: 9px;
+}
+
+.snake {
+    background: linear-gradient(#FF9800, #F57C00);
+
+    border: .25vmin solid white;
+    border-radius: 50%;
+    
+}
+.food {
+  background: linear-gradient(#4CAF50, #388E3C);
+  border: 0.25vmin solid black;
+  border-radius: 50%;
+} */
+/* 
+.food {
+  background-color: #4CAF50;
+  border: 2px solid #388E3C;
+    border-radius: 50%;
+
+} */
+
+
+/* .food {
+  background-color: #FFD700; 
+  border: 2px solid #DAA520; 
+} */
+.food {
+  background-color: #90EE90; /* Light Green */
+  border: 2px solid darkgreen; /* Pale Green */
+  border-radius: 50%;
+
+}
+
+
+/* .food {
+  background-color: #4CAF50; 
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #388E3C;
+} */
+
+
+.snake {
+  background-color: #FF9800;
+  border: 2px solid #F57C00; 
+    border-radius: 6px;
+
+}
+
+.head {
+  background-color: #F44336;
+  border: 2px solid #D32F2F;
+    border-radius: 8px;
+    transform: scale(1.06);
+
+}
+
+
+  
